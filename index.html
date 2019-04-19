@@ -3,6 +3,10 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/custom/radio.css">
+
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 <title>Design-Selv Carport</title>
 </head>
 <body>
@@ -20,13 +24,13 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="nav nav-pills mx-auto" id="pills-tab" role="tablist">
       <li class="nav-item" style="padding-left:20px;padding-right:20px;">
-        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">1. Dimensioner</a>
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" >1. Dimensioner</a>
       </li>
       <li class="nav-item" style="padding-left:20px;padding-right:20px;">
-        <a class="nav-link" id="pills-profile-tab"  href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"" data-toggle="pill">2. Taget</a>
+        <a class="nav-link" id="pills-profile-tab"  href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"" data-toggle="pill" >2. Taget</a>
       </li>
       <li class="nav-item" style="padding-left:20px;padding-right:20px;">
-        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">3. Materiale</a>
+        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false" >3. Materiale</a>
       </li>
     </ul>
 	<ul class="navbar-nav float-right">
@@ -66,8 +70,8 @@
 				<p class="card-text">Det er vigtigt at finde ud af hvilken størrelse din carport skal være, det har selvfølgelig betydning for den plads du har brug for. Har du en bil så er den nødvendige længde mindre end hvis du har to biler. Hvis du har brug for hjælp til at bestemme dimensionerne på din carport er vi mere end glade for at høre fra jer.</p>
 			  </div>
 			  <ul class="list-group list-group-flush">
-				<li class="list-group-item">Mail: <a href="mailto:info@johannesfog.dk">info@johannesfog.dk</a></li>
-				<li class="list-group-item">Telefon: +45 45 87 10 01</li>
+				<li class="list-group-item"><a href="mailto:info@johannesfog.dk"><i class="fa fa-envelope"></i> info@johannesfog.dk</a></li>
+				<li class="list-group-item"><a href="tel:+4545871001"><i class="fa fa-phone"></i> +45 45 87 10 01</a></li>
 				<li class="list-group-item">Tjek vores standard carporte ud for bedre overblik</li>
 			  </ul>
 			  <div class="card-body">
@@ -122,7 +126,7 @@
 	
 		<br><br>
 		<div class="float-right" style="vertical-align:bottom;">
-			<button type="button" class="btn btn-primary">Næste</button>
+			<button type="button" class="btn btn-primary" onclick="document.getElementById('pills-profile-tab').click()">Næste</button>
 		</div>
 
 	</div>
@@ -180,8 +184,8 @@
 	
 		<br><br>
 		<div class="float-right" style="vertical-align:bottom;">
-			<button type="button" class="btn btn-light">Tilbage</button>
-			<button type="button" class="btn btn-primary">Næste</button>
+			<button type="button" class="btn btn-light" onclick="document.getElementById('pills-home-tab').click()">Tilbage</button>
+			<button type="button" class="btn btn-primary" onclick="document.getElementById('pills-contact-tab').click()">Næste</button>
 		</div>
 
 	</div>
@@ -266,7 +270,7 @@
 	
 		<br><br>
 		<div class="float-right" style="vertical-align:bottom;">
-			<button type="button" class="btn btn-light">Tilbage</button>
+			<button type="button" class="btn btn-light" onclick="document.getElementById('pills-profile-tab').click()">Tilbage</button>
 			<button type="button" class="btn btn-success">Afslut</button>
 		</div>
 
