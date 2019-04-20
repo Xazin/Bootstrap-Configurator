@@ -32,6 +32,9 @@
       <li class="nav-item" style="padding-left:20px;padding-right:20px;">
         <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false" >3. Materiale</a>
       </li>
+	  <li class="nav-item" style="padding-left:20px;padding-right:20px;"> <!-- Denne knap er gemt væk -->
+	    <a class="nav-link" id="pills-afslut-tab"  href="#pills-afslut" role="tab" aria-controls="pills-afslut" aria-selected="false"" data-toggle="pill" hidden="true"></a>
+	  </li>
     </ul>
 	<ul class="navbar-nav float-right">
 	  <li class="nav-item">
@@ -297,7 +300,7 @@
 		<br><br>
 		<div class="float-right" style="vertical-align:bottom;">
 			<button type="button" class="btn btn-light" onclick="document.getElementById('pills-profile-tab').click()">Tilbage</button>
-			<button type="button" class="btn btn-success">Afslut</button>
+			<button type="button" class="btn btn-success" onclick="document.getElementById('pills-afslut-tab').click()">Bestil</button>
 		</div>
 
 	</div>
@@ -307,6 +310,138 @@
 			</div>
 			
 		  </div>
+		  
+		  
+		  <!-- Afslut -->
+	  
+		<div class="tab-pane fade" id="pills-afslut" role="tabpanel" aria-labelledby="pills-afslut-tab">
+		
+
+		<div class="container-fluid">
+		  <div class="row">
+		
+			<!-- Venstre -->
+			
+			<div class="col col-lg-8">
+			
+				<br>
+				
+			<div class="card" style="">
+					 <div class="card-header text-center bg-light">
+						<div class="row align-items-center">
+							<div class="col-md-12">
+								<h5>Hvordan kontakter vi dig?</h5>
+							</div>
+						</div>
+					 </div>
+						<div class="card-body">
+						
+						<span>Vi vil hjertelig gerne hjælpe dig med at færdiggøre din bestilling, indtast venligst dine oplysninger og så sørger vi for at kontakte dig omkring det endelige bud.</span> 
+						
+						<br>
+						<br>
+							<form>
+							  <div class="form-group row">
+								<label for="email" class="col-sm-2 col-form-label">Email</label>
+								<div class="col-sm-4">
+								  <input type="text" class="form-control" id="email" value="email@example.com">
+								</div>
+							  </div>
+							  <div class="form-group row">
+								<label for="navn" class="col-sm-2 col-form-label">Navn</label>
+								<div class="col-sm-4">
+								  <input type="text" class="form-control" id="navn" placeholder="Fornavn Efternavn">
+								</div>
+							  </div>
+							  <div class="form-group row">
+								<label for="adresse" class="col-sm-2 col-form-label">Adresse</label>
+								<div class="col-sm-4">
+								  <input type="text" class="form-control" id="adresse" placeholder="vejnavn nr">
+								</div>
+							  </div>
+							  <div class="form-group row">
+								<label for="by" class="col-sm-2 col-form-label">Postnummer og by</label>
+								<div class="col-sm-4">
+								  <input type="text" class="form-control" id="by" placeholder="postnummer by">
+								</div>
+							  </div>
+							  <div class="form-group row">
+								<label for="telefon" class="col-sm-2 col-form-label">Telefon</label>
+								<div class="col-sm-4">
+								  <input type="text" class="form-control" id="telefon" placeholder="telefon nr">
+								</div>
+							  </div>
+							  <div class="form-group row">
+								<div style="margin-left: 18px;">
+									<input type="submit" class="btn btn-primary" value="Indsend oplysninger">
+								</div>
+							  </div>
+							  <div class="form-group row">
+								<div style="margin-left: 18px;">
+								    <small>Når du indsender oplysninger, så indsender du samtidig din carports oplysninger.</small>
+								</div>
+							  </div>
+							</form>
+						</div>
+					</div>
+			
+			</div>
+			
+			<!-- Højre -->
+			
+			<div class="col col-lg-4" style="background-color: #eae9e9;height:90%;">
+					<br>
+					
+			<div class="card">
+				<div class="card-header">
+					<span><b>Nuværende valg</b></span>
+				</div>
+				<div class="card-body">
+				  <div class="table-responsive">
+						<table class="table table-striped" style="text-align:center">
+						  <thead class="" style="background-color: #7b7b7b; color: #fff">
+							<tr>
+							  <th scope="col">Længde</th>
+							  <th scope="col">Højde</th>
+							  <th scope="col">Bredde</th>
+							  <th scope="col">Tagtype</th>
+							  <th scope="col">Materiale</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <td>150 cm</td>
+							  <td>150 cm</td>
+							  <td>200 cm</td>
+							  <td>Rejsning</td>
+							  <td>Egetræ</td>
+							</tr>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			
+			<br><br>
+			
+			<center>
+			<span><h5>Pris i alt</h5></span>
+			<span style="color: green"><h4>28.000 kr</h4></span>
+			<small>Betal først ved senere aftale med afdelingen!</small>
+			</center>
+			
+		<br><br>
+		<div style="vertical-align:bottom;">
+			<button type="button" class="btn btn-light" onclick="document.getElementById('pills-contact-tab').click()" style="width:100%;">Tilbage</button>
+		</div>
+
+	</div>
+			
+			
+			</div>
+			</div>
+		</div>
+		  
 	  </div>
     </div>
 	
