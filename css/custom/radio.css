@@ -4,8 +4,13 @@
        -moz-appearance:none;
             appearance:none;
 }
-.fladt{background-image:url(https://i.imgur.com/2OQ6oy9.png);}
-.rejsning{background-image:url(https://i.imgur.com/4BKnD1L.png);}
+.fladt{background-image:url("../../images/fladt.png");}
+.rejsning{background-image:url("../../images/rejsning.png");}
+
+.standard1{background-image:url("../../images/standard1.png");}
+.standard2{background-image:url("../../images/standard2.png");}
+.standard3{background-image:url("../../images/standard3.png");}
+.standard4{background-image:url("../../images/standard4.png");}
 
 .cc-selector input:active +.drinkcard-cc{opacity: .9;}
 .cc-selector input:checked +.drinkcard-cc{

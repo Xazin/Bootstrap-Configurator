@@ -11,6 +11,53 @@
 </head>
 <body>
 
+<!-- Script til at enten skrive selv eller at vælge standard carport -->
+
+<script>
+      function change(type){
+	  
+	  // Enkelt carport med rejsning
+	  
+		  if (type == 1) {
+		  document.getElementById("inputLength").value="360";
+		  document.getElementById("inputWidth").value="540";
+		  document.getElementById("inputHeight").value="300";
+		  document.getElementById("rejsning").checked="checked"; // Vælger Taget til at være fladt/rejsning
+		  }
+		
+		
+	  // Enkelt caport med fladt tag
+		  
+		  if (type == 2) {
+		  document.getElementById("inputLength").value="300";
+		  document.getElementById("inputWidth").value="480";
+		  document.getElementById("inputHeight").value="225";
+		  document.getElementById("fladt").checked="checked"; // Vælger Taget til at være fladt/rejsning
+		  }
+	  
+	  // Dobbelt caport med rejsning
+		  
+		  if (type == 3) {
+		  document.getElementById("inputLength").value="600";
+		  document.getElementById("inputWidth").value="870";
+		  document.getElementById("inputHeight").value="380";
+		  document.getElementById("rejsning").checked="checked"; // Vælger Taget til at være fladt/rejsning
+		  }
+		  
+	  // Dobbelt carport med fladt tag
+	  
+		  if (type == 4) {
+		  document.getElementById("inputLength").value="600";
+		  document.getElementById("inputWidth").value="480";
+		  document.getElementById("inputHeight").value="225";
+		  document.getElementById("fladt").checked="checked"; // Vælger Taget til at være fladt/rejsning
+		  }
+		  
+      }
+
+</script>
+
+
 <!-- Menu / Navigation -->
 
 <nav class="navbar navbar-default navbar-expand navbar-light bg-light">
@@ -91,35 +138,41 @@
 					
 			<br>
 			<center>
-				<label><b>Vælg type</b></label>
+				<label><b>Vælg type fra standard</b></label>
 					<div class="cc-selector">
 						<!-- Standard 1 -->
-						<input id="fladt" type="radio" name="credit-card" value="fladt" />
-						<label class="drinkcard-cc fladt" for="fladt"></label>
+						<button onclick="change(1)" hidden><input id="standard1" type="radio" name="standard-carport" value="standard1" /></button>
+						<label class="drinkcard-cc standard1" for="standard1"></label>
 						
 						<!-- Standard 2 -->
-						<input id="rejsning" type="radio" name="credit-card" value="rejsning" />
-						<label class="drinkcard-cc rejsning"for="rejsning"></label>
-						
+						<button onclick="change(2)" hidden><input id="standard2" type="radio" name="standard-carport" value="standard2" /></button>
+						<label class="drinkcard-cc standard2"for="standard2"></label>
+						<br>
 						<!-- Standard 3 -->
-						<input id="fladt" type="radio" name="credit-card" value="fladt" />
-						<label class="drinkcard-cc fladt" for="fladt"></label>
+						<button onclick="change(3)" hidden><input id="standard3" type="radio" name="standard-carport" value="standard3" /></button>
+						<label class="drinkcard-cc standard3"for="standard3"></label>
 						
 						<!-- Standard 4 -->
-						<input id="rejsning" type="radio" name="credit-card" value="rejsning" />
-						<label class="drinkcard-cc rejsning"for="rejsning"></label>
+						<button onclick="change(4)" hidden><input id="standard4" type="radio" name="standard-carport" value="standard4" /></button>
+						<label class="drinkcard-cc standard4"for="standard4"></label>
 					</div>
 					
-					<i>eller skriv selv</i>
 					
-			</center>
+					
 			
 			<hr/>
 			
+			<i>eller skriv selv dine egne mål</i>
+			
+			<hr/>
+			
+			</center>
+
+
 			<label class="">Længde:</label>
 			<div class="input-group mb-2">
 			
-				<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="F.eks. 450">
+				<input type="text" class="form-control" id="inputLength" placeholder="F.eks. 450">
 				
 				<div class="input-group-prepend">
 				  <div class="input-group-text">
@@ -131,7 +184,7 @@
 			<label class="">Bredde:</label>
 			<div class="input-group mb-2">
 			
-				<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="F.eks. 200">
+				<input type="text" class="form-control" id="inputWidth" placeholder="F.eks. 200">
 				
 				<div class="input-group-prepend">
 				  <div class="input-group-text">
@@ -143,7 +196,7 @@
 			<label class="">Højde:</label>
 			<div class="input-group mb-2">
 			
-				<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="F.eks. 220">
+				<input type="text" class="form-control" id="inputHeight" placeholder="F.eks. 220">
 				
 				<div class="input-group-prepend">
 				  <div class="input-group-text">
